@@ -13,6 +13,7 @@ public class GameManager : MonoBehaviour
     private InputAction pauseAction;
     private GameObject pauseMenuUI;
     private GameObject resumeButton;
+    public GameObject GameOverText;
     private bool _paused;
     public bool IsPaused => _paused;
     private bool _isMenuScene;
@@ -131,6 +132,8 @@ public class GameManager : MonoBehaviour
     public void LoadScene(string sceneName)
     {
         Time.timeScale = 1f;
+        GameOverText.SetActive(false);
+        resumeButton.SetActive(true);
         SceneManager.LoadScene(sceneName);
     }
 
@@ -156,6 +159,7 @@ public class GameManager : MonoBehaviour
     public void GameOver()
     {
         Pause();
+        GameOverText.SetActive(true);
         resumeButton.SetActive(false);
     }
 }
