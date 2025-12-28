@@ -2,27 +2,36 @@ using UnityEngine;
 
 public class Health : MonoBehaviour
 {
+
+    private GameManager GameManager;
+
     public int maxHealth = 100;
-    public int health;
+    public int HP { get; private set; }
 
     public int maxArmor = 0;
-    public int armor;
+    public int Armor { get; private set; }
 
     void Awake()
     {
-        health = maxHealth;
-        armor = 0;
+        GameManager = FindFirstObjectByType<GameManager>();
+        HP = maxHealth;
+        Armor = 0;
     }
 
     public void TakeDamage(int damage)
     {
-        int armorAbsorb = Mathf.Min(armor, damage);
-        armor -= armorAbsorb;
+        int armorAbsorb = Mathf.Min(Armor, damage);
+        Armor -= armorAbsorb;
         damage -= armorAbsorb;
 
-        health -= damage;
+        HP -= damage;
 
-        if (health <= 0)
+        Debug.Log($"Health: {HP}");
+
+        if (gameObject.GetComponent<PlayerController>())
+            GameManager.UpdateUI();
+
+        if (HP <= 0)
             Die();
     }
 

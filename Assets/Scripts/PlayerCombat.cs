@@ -23,7 +23,7 @@ public class PlayerCombat : MonoBehaviour
         }
     }
 
-    public void Attack()
+    private void Attack()
     {
         if (Time.time < nextAttackTime)
             return;
