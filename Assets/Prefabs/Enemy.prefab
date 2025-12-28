@@ -179,6 +179,9 @@ MonoBehaviour:
   FireAudio: {fileID: 7528073920355192395}
   damage: 10
   fireRate: 2
+  playerLayerMask:
+    serializedVersion: 2
+    m_Bits: 64
 --- !u!114 &3407314365621668322
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -193,10 +196,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::HealthManager
   DamageAudio: {fileID: 4556069376257347305}
   HealAudio: {fileID: 0}
-  ArmorAudio: {fileID: 0}
   DieAudio: {fileID: 8770687648801612910}
   maxHealth: 100
-  maxArmor: 0
 --- !u!82 &7528073920355192395
 AudioSource:
   m_ObjectHideFlags: 0
@@ -307,8 +308,8 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: 7ee7461f165c26e499c5281ced7b96fc, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
+  m_Volume: 0.5
+  m_Pitch: 1.25
   Loop: 0
   Mute: 0
   Spatialize: 0
@@ -404,8 +405,8 @@ AudioSource:
   m_audioClip: {fileID: 0}
   m_Resource: {fileID: 8300000, guid: a7cc85a3ff069fe41a479c7b13bb6503, type: 3}
   m_PlayOnAwake: 0
-  m_Volume: 1
-  m_Pitch: 1
+  m_Volume: 0.5
+  m_Pitch: 1.25
   Loop: 0
   Mute: 0
   Spatialize: 0

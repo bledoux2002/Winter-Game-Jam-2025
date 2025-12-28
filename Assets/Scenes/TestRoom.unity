@@ -1337,7 +1337,7 @@ GameObject:
   - component: {fileID: 337929901}
   - component: {fileID: 337929900}
   - component: {fileID: 337929903}
-  m_Layer: 0
+  m_Layer: 6
   m_Name: Player
   m_TagString: Untagged
   m_Icon: {fileID: 0}
@@ -3337,14 +3337,6 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 2083799162}
     m_Modifications:
-    - target: {fileID: 4556069376257347305, guid: 5e16bd54d414cb54587856a1a1a03b41, type: 3}
-      propertyPath: m_Pitch
-      value: 1.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 4556069376257347305, guid: 5e16bd54d414cb54587856a1a1a03b41, type: 3}
-      propertyPath: m_Volume
-      value: 0.5
-      objectReference: {fileID: 0}
     - target: {fileID: 5057588862265002268, guid: 5e16bd54d414cb54587856a1a1a03b41, type: 3}
       propertyPath: m_LocalPosition.x
       value: -11.740541
@@ -3389,13 +3381,9 @@ PrefabInstance:
       propertyPath: m_Name
       value: Enemy
       objectReference: {fileID: 0}
-    - target: {fileID: 8770687648801612910, guid: 5e16bd54d414cb54587856a1a1a03b41, type: 3}
-      propertyPath: m_Pitch
-      value: 1.25
-      objectReference: {fileID: 0}
-    - target: {fileID: 8770687648801612910, guid: 5e16bd54d414cb54587856a1a1a03b41, type: 3}
-      propertyPath: m_Volume
-      value: 0.5
+    - target: {fileID: 5492864415187859974, guid: 5e16bd54d414cb54587856a1a1a03b41, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
@@ -6241,6 +6229,10 @@ PrefabInstance:
       propertyPath: damage
       value: 15
       objectReference: {fileID: 0}
+    - target: {fileID: 3794146484156797751, guid: 5e16bd54d414cb54587856a1a1a03b41, type: 3}
+      propertyPath: playerLayerMask.m_Bits
+      value: 64
+      objectReference: {fileID: 0}
     - target: {fileID: 4286745538058993401, guid: 5e16bd54d414cb54587856a1a1a03b41, type: 3}
       propertyPath: m_Mesh
       value: 
@@ -6251,7 +6243,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5057588862265002268, guid: 5e16bd54d414cb54587856a1a1a03b41, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -15.61
+      value: -18.39
       objectReference: {fileID: 0}
     - target: {fileID: 5057588862265002268, guid: 5e16bd54d414cb54587856a1a1a03b41, type: 3}
       propertyPath: m_LocalPosition.y
@@ -6259,7 +6251,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5057588862265002268, guid: 5e16bd54d414cb54587856a1a1a03b41, type: 3}
       propertyPath: m_LocalPosition.z
-      value: 19.56
+      value: 22.78
       objectReference: {fileID: 0}
     - target: {fileID: 5057588862265002268, guid: 5e16bd54d414cb54587856a1a1a03b41, type: 3}
       propertyPath: m_LocalRotation.w
@@ -6292,6 +6284,10 @@ PrefabInstance:
     - target: {fileID: 5492864415187859974, guid: 5e16bd54d414cb54587856a1a1a03b41, type: 3}
       propertyPath: m_Name
       value: Boss
+      objectReference: {fileID: 0}
+    - target: {fileID: 5492864415187859974, guid: 5e16bd54d414cb54587856a1a1a03b41, type: 3}
+      propertyPath: m_Layer
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7528073920355192395, guid: 5e16bd54d414cb54587856a1a1a03b41, type: 3}
       propertyPath: m_Volume
